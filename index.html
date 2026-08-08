@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body data-theme="light">
     <!-- Scroll Progress Bar -->
@@ -583,7 +582,10 @@
                     </div>
                 </div>
                 <div class="contact-form reveal slide-right">
-                    <form id="contactForm" novalidate>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
+                        <!-- Web3Forms Access Key: Get one for free at https://web3forms.com -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Name" required>
                         </div>
@@ -596,6 +598,10 @@
                         <div class="form-group">
                             <textarea name="message" placeholder="Your Message" required></textarea>
                         </div>
+
+                        <!-- Anti-spam Honeypot field -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                         <button type="submit" class="btn">Send Message</button>
                         <p id="formStatus" class="form-status" aria-live="polite"></p>
                     </form>

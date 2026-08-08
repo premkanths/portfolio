@@ -243,10 +243,8 @@ window.addEventListener("scroll", () => {
   })
 })
 
-// EmailJS Integration (Success/Error Message Handling)
+// Web3Forms Integration (Success/Error Message Handling via Fetch)
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("bPcATHwhwmHBSU-Xs")
-
   const contactForm = document.getElementById("contactForm")
   const formStatus = document.getElementById("formStatus")
 
@@ -260,22 +258,46 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.addEventListener("submit", function (event) {
       event.preventDefault()
 
+      // Prevent sending if placeholder key is still there
+      const accessKeyInput = contactForm.querySelector('input[name="access_key"]')
+      if (accessKeyInput && accessKeyInput.value === "YOUR_ACCESS_KEY_HERE") {
+        updateStatus("error", "Error: Please set your Web3Forms Access Key in index.html.")
+        return
+      }
+
       const submitBtn = this.querySelector('button[type="submit"]')
       const originalText = submitBtn.textContent
       submitBtn.disabled = true
       submitBtn.textContent = "Sending..."
-      updateStatus("", "Sending message…")
+      updateStatus("", "Sending message...")
 
-      emailjs
-        .sendForm("Premkanth_services", "template_10nkafp", this)
-        .then(function () {
-          updateStatus("success", "Message sent successfully! I will get back to you soon.")
-          contactForm.reset()
-        }, function (error) {
-          updateStatus("error", "Failed to send message. Please email me directly at preamsrinivas081@gmail.com")
-          console.error("EmailJS Error:", error)
+      const formData = new FormData(contactForm)
+      const object = Object.fromEntries(formData)
+      const json = JSON.stringify(object)
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      })
+        .then(async (response) => {
+          let res = await response.json()
+          if (response.status === 200) {
+            updateStatus("success", "Message sent successfully! I will get back to you soon.")
+            contactForm.reset()
+          } else {
+            console.log(response)
+            updateStatus("error", res.message || "Failed to send message. Please email me directly at premkanthks@gmail.com")
+          }
         })
-        .finally(function () {
+        .catch((error) => {
+          console.log(error)
+          updateStatus("error", "Something went wrong. Please email me directly at premkanthks@gmail.com")
+        })
+        .finally(() => {
           submitBtn.disabled = false
           submitBtn.textContent = originalText
         })

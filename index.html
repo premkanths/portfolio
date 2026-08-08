@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premkanth KS - Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Premkanth KS - Computer Science Engineering Student & Full-Stack Developer. Exploring UI/UX, React, Java, Node.js, and DSA.">
+    <meta name="keywords" content="Premkanth KS, Portfolio, CSE Presidency University, software engineer, web developer, full stack developer, React developer, Java developer, Bangalore">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Premkanth KS - Portfolio">
+    <meta property="og:description" content="Computer Science Engineering Student & Full-Stack Developer specializing in modern responsive interfaces, React, and Java.">
+    <meta property="og:image" content="first.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Premkanth KS - Portfolio">
+    <meta property="twitter:description" content="Computer Science Engineering Student & Full-Stack Developer specializing in modern responsive interfaces, React, and Java.">
+    <meta property="twitter:image" content="first.webp">
+
+    <!-- Inline SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%238e44ad%22/><text x=%2250%%22 y=%2265%%22 font-size=%2250%22 font-weight=%22bold%22 font-family=%22Poppins, sans-serif%22 fill=%22white%22 text-anchor=%22middle%22>PK</text></svg>">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body data-theme="light">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">PREMKANTH</a>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content reveal fade-up">
+            <h1>Hello, I'm <br><span>Premkanth </span><span class="dot">KS</span></h1>
+            <p class="hero-subtitle"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
+            
+            <div class="hero-ctas">
+                <a href="Premkanth_KS%20resume.docx" class="btn btn-small-hero" download><i class="fas fa-file-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>ABOUT ME</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-img reveal zoom-in">
+                    <img src="second.webp" alt="Premkanth KS" loading="lazy">
+                </div>
+                <div class="about-text reveal slide-right">
+                    <h3>Hello! I'm Premkanth KS</h3>
+                    <p>I'm a Computer Science Engineering student at Presidency University with a passion for building responsive, user-friendly web applications. I enjoy turning ideas into clean, functional interfaces and continuously improving my development skills.</p>
+                    <p>I primarily work with HTML, CSS, JavaScript, React, Node.js, Express.js, Java, and MySQL, and I'm currently expanding my knowledge in full-stack development and data structures & algorithms.</p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span>Name:</span> Premkanth KS
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span> premkanthks@gmail.com
+                        </div>
+                        <div class="info-item">
+                            <span>Phone:</span> 8088113122
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/premkanth-ks/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/premkanths" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Premkant_h?t=QY0K37wRJg_PbU3mNhqB1w&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_prem_kanth_s_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>EDUCATION</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline timeline-small">
+                <div class="timeline-item reveal slide-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content timeline-content-small">
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <h4>Presidency University, Bangalore</h4>
+                        <p class="timeline-date">2023 - 2027 | CGPA: 8.87</p>
+                        <p>Focusing on software development, algorithms, and web applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal slide-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content timeline-content-small">
+                        <h3>Pre-University (1st &amp; 2nd PU)</h3>
+                        <h4>Sri Narayana PU College</h4>
+                        <p class="timeline-date">Completed in 2023 | Percentage: 92.66%</p>
+                        <p>Science stream with basic programming and digital logic.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal slide-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content timeline-content-small">
+                        <h3>School Education</h3>
+                        <h4>Shree Gurudarshan English Medium Public High School</h4>
+                        <p class="timeline-date">Completed in 2021 | Percentage: 79.8%</p>
+                        <p>Built strong academic fundamentals and early interest in tech.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>MY SKILLS</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid-categories">
+                <!-- Category 1 -->
+                <div class="skills-card reveal slide-left">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fab fa-java java-icon"></i> Java</span>
+                        <span class="badge"><i class="fab fa-js js-icon"></i> JavaScript</span>
+                        <span class="badge"><i class="fab fa-python python-icon"></i> Python</span>
+                        <span class="badge"><i class="fas fa-terminal cpp-icon"></i> C++</span>
+                        <span class="badge"><i class="fab fa-html5 html-icon"></i> HTML5</span>
+                        <span class="badge"><i class="fab fa-css3-alt css-icon"></i> CSS3</span>
+                    </div>
+                </div>
+                <!-- Category 2 -->
+                <div class="skills-card reveal slide-left" style="transition-delay: 0.05s;">
+                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fab fa-react react-icon"></i> React</span>
+                        <span class="badge"><i class="fab fa-react nextjs-icon"></i> Next.js</span>
+                        <span class="badge"><i class="fab fa-html5 html-icon"></i> HTML</span>
+                        <span class="badge"><i class="fab fa-css3-alt css-icon"></i> CSS</span>
+                        <span class="badge"><i class="fas fa-mobile-alt responsive-icon"></i> Responsive Design</span>
+                    </div>
+                </div>
+                <!-- Category 3 -->
+                <div class="skills-card reveal slide-left" style="transition-delay: 0.1s;">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fab fa-node-js node-icon"></i> Node.js</span>
+                        <span class="badge"><i class="fas fa-project-diagram express-icon"></i> Express.js</span>
+                    </div>
+                </div>
+                <!-- Category 4 -->
+                <div class="skills-card reveal slide-left" style="transition-delay: 0.15s;">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fas fa-leaf mongo-icon"></i> MongoDB</span>
+                        <span class="badge"><i class="fas fa-database mysql-icon"></i> MySQL</span>
+                    </div>
+                </div>
+                <!-- Category 5 -->
+                <div class="skills-card reveal slide-left" style="transition-delay: 0.2s;">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fab fa-git-alt git-icon"></i> Git</span>
+                        <span class="badge"><i class="fab fa-github github-icon"></i> GitHub</span>
+                        <span class="badge"><i class="fas fa-code vscode-icon"></i> VS Code</span>
+                        <span class="badge"><i class="fab fa-android android-icon"></i> Android Studio</span>
+                        <span class="badge"><i class="fas fa-fire firebase-icon"></i> Firebase</span>
+                        <span class="badge"><i class="fab fa-docker docker-icon"></i> Docker</span>
+                    </div>
+                </div>
+                <!-- Category 6 -->
+                <div class="skills-card reveal slide-left" style="transition-delay: 0.25s;">
+                    <h3><i class="fas fa-microchip"></i> Core CS</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fas fa-brain dsa-icon"></i> DSA</span>
+                        <span class="badge"><i class="fas fa-sitemap dbms-icon"></i> DBMS</span>
+                        <span class="badge"><i class="fas fa-th-list oop-icon"></i> OOP</span>
+                        <span class="badge"><i class="fas fa-terminal sql-icon"></i> SQL</span>
+                        <span class="badge"><i class="fas fa-desktop os-icon"></i> Operating Systems</span>
+                    </div>
+                </div>
+                <!-- Category 7 -->
+                <div class="skills-card reveal slide-left" style="transition-delay: 0.3s;">
+                    <h3><i class="fas fa-robot"></i> AI &amp; APIs</h3>
+                    <div class="skills-badges">
+                        <span class="badge"><i class="fas fa-magic gemini-icon"></i> Gemini API</span>
+                        <span class="badge"><i class="fas fa-brain llm-icon"></i> LLMs</span>
+                        <span class="badge"><i class="fas fa-network-wired api-icon"></i> AI API Integration</span>
+                        <span class="badge"><i class="fas fa-terminal prompt-icon"></i> Prompt Engineering</span>
+                        <span class="badge"><i class="fas fa-cloud api-icon"></i> REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>EXPERIENCE</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal slide-left">
+                    <div class="timeline-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>App Development Intern</h3>
+                        <h4>ApexPlanet Software Pvt. Ltd. (Virtual Internship | AICTE Verified)</h4>
+                        <p class="timeline-date">01 July 2025 – 15 August 2025</p>
+                        <ul>
+                            <li>AICTE Verified virtual internship program under ID APSPL2511049.</li>
+                            <li>Built Android application features using Java and Android Studio.</li>
+                            <li>Implemented responsive mobile UI layouts.</li>
+                            <li>Participated in testing, debugging, and Agile team workflows; followed structured coding standards.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item reveal slide-right">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Web Development Intern</h3>
+                        <h4>Codec Technologies (Virtual Internship)</h4>
+                        <p class="timeline-date">June 2026 – July 2026</p>
+                        <ul>
+                            <li>Developed responsive web pages using HTML, CSS, JavaScript, and React; built reusable UI components.</li>
+                            <li>Improved cross-device UI responsiveness and participated in code review and debugging sessions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>CERTIFICATES &amp; COURSES</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <h3 class="cert-subheading reveal fade-up"><i class="fas fa-briefcase"></i> Internship Certificates</h3>
+            <div class="certs-grid">
+                <div class="cert-card reveal zoom-in">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>Web Development Internship</h3>
+                    <p class="cert-issuer">Codec Technologies</p>
+                    <p class="cert-date">Completed July 2026</p>
+                    <a href="codec Internship Certificate.pdf" target="_blank" class="btn btn-sm btn-outline btn-cert"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+                <div class="cert-card reveal zoom-in" style="transition-delay: 0.1s;">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>App Development Internship</h3>
+                    <p class="cert-issuer">ApexPlanet Software Pvt. Ltd.</p>
+                    <p class="cert-date">Completed August 2025</p>
+                    <a href="app_cert.jpeg" target="_blank" class="btn btn-sm btn-outline btn-cert"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            
+            <h3 class="cert-subheading reveal fade-up" style="margin-top: 50px;"><i class="fas fa-graduation-cap"></i> Completed Courses</h3>
+            <div class="courses-grid">
+                <div class="course-card reveal zoom-in">
+                    <div class="course-icon"><i class="fab fa-js-square"></i></div>
+                    <h4>JavaScript Fundamentals to Advanced</h4>
+                    <p class="course-issuer">Udemy</p>
+                    <p class="course-date">Completed Jan 2026</p>
+                    <a href="udamy-javascript.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+                <div class="course-card reveal zoom-in" style="transition-delay: 0.08s;">
+                    <div class="course-icon"><i class="fas fa-building"></i></div>
+                    <h4>Technology Job Simulation</h4>
+                    <p class="course-issuer">Deloitte / Forage</p>
+                    <p class="course-date">Completed Jan 2026</p>
+                    <a href="Deloitte-premkanth.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+                <div class="course-card reveal zoom-in" style="transition-delay: 0.16s;">
+                    <div class="course-icon"><i class="fab fa-google"></i></div>
+                    <h4>Trust &amp; Security with Google Cloud</h4>
+                    <p class="course-issuer">Simplilearn SkillUp</p>
+                    <p class="course-date">Completed Jan 2026</p>
+                    <a href="googlecloud.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+                <div class="course-card reveal zoom-in" style="transition-delay: 0.24s;">
+                    <div class="course-icon"><i class="fab fa-react"></i></div>
+                    <h4>Developing Front-End Apps with React</h4>
+                    <p class="course-issuer">IBM / Coursera</p>
+                    <p class="course-date">Completed Jan 2026</p>
+                    <a href="coursera.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>MY PORTFOLIO</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="carousel-container reveal zoom-in">
+                <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous Project">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="carouselNext" aria-label="Next Project">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="portfolio-carousel" id="portfolioCarousel">
+                    <!-- Project 1: AI Resume Boost -->
+                    <article class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="ai_resume_boost.webp" alt="AI Resume Boost" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <p class="portfolio-pill">Artificial Intelligence</p>
+                            <h3>AI Resume Boost</h3>
+                            <p>Developed a tool that parses resume content, scores it against job descriptions using NLP/LLM-based analysis, and generates tailored improvement suggestions.</p>
+                            <div class="portfolio-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>Gemini AI API</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/premkanths/ai-resume-boost" target="_blank" rel="noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://ai-resume-boost.vercel.app/" target="_blank" rel="noreferrer" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: LiveBus Tracker -->
+                    <article class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="live_bus_tracking.webp" alt="LiveBus Tracker" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <p class="portfolio-pill">Web Application</p>
+                            <h3>LiveBus Tracker</h3>
+                            <p>Built a full-stack transit application with real-time GPS location tracking, ETA prediction, SOS alerts, and an admin control dashboard using Firebase for live data sync and authentication.</p>
+                            <div class="portfolio-tags">
+                                <span>Next.js</span>
+                                <span>Firebase</span>
+                                <span>JavaScript</span>
+                                <span>Leaflet.js</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/premkanths/livebus-v7" target="_blank" rel="noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://livebus-v7.vercel.app/login" target="_blank" rel="noreferrer" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Mini Games Hub -->
+                    <article class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="mini_games_hub.webp" alt="Mini Games Hub" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <p class="portfolio-pill">Playground</p>
+                            <h3>Mini Games Hub</h3>
+                            <p>A colorful bundle of browser-based mini-games to sharpen reflexes, test logic, and enjoy casual gaming.</p>
+                            <div class="portfolio-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/premkanths/mini-gameshub" target="_blank" rel="noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://premkanth-minigameshub.netlify.app/" target="_blank" rel="noreferrer" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: WorkspaceHub PK -->
+                    <article class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="workspace_hub.webp" alt="WorkspaceHub PK" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <p class="portfolio-pill">Productivity</p>
+                            <h3>WorkspaceHub PK</h3>
+                            <p>An all-in-one productivity dashboard equipped with a kanban board, drawing canvas, and local sync.</p>
+                            <div class="portfolio-tags">
+                                <span>Vanilla JS</span>
+                                <span>UI Design</span>
+                                <span>Netlify</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/premkanths/workspace" target="_blank" rel="noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://workspacehubpk.netlify.app/" target="_blank" rel="noreferrer" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Typing Fun -->
+                    <article class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="typing_fun.webp" alt="Typing Fun" loading="lazy">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <p class="portfolio-pill">Web App</p>
+                            <h3>Typing Fun</h3>
+                            <p>A typing speed tester with adjustable countdown timers, live speed stats, WPM metrics, and clean interface themes.</p>
+                            <div class="portfolio-tags">
+                                <span>JavaScript</span>
+                                <span>Accessibility</span>
+                                <span>GitHub Pages</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/premkanths/typing-fun" target="_blank" rel="noreferrer" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://premkanths.github.io/typing-fun/" target="_blank" rel="noreferrer" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Focus Combined Section -->
+    <section id="stats-focus" class="section">
+        <div class="container">
+            <div class="stats-focus-wrapper">
+                <!-- Stats Side -->
+                <div class="stats-side reveal slide-left">
+                    <h3 class="side-heading"><i class="fas fa-chart-line"></i> Statistics</h3>
+                    <div class="stats-mini-grid">
+                        <div class="stat-card-mini">
+                            <div class="stat-icon-mini"><i class="fas fa-laptop-code"></i></div>
+                            <div>
+                                <h4 class="stat-number" data-target="8">0</h4>
+                                <p>Personal Projects</p>
+                            </div>
+                        </div>
+                        <div class="stat-card-mini">
+                            <div class="stat-icon-mini"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h4 class="stat-number" data-target="150">0</h4>
+                                <p>LeetCode Problems Solved</p>
+                            </div>
+                        </div>
+                        <div class="stat-card-mini">
+                            <div class="stat-icon-mini"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <h4 class="stat-number" data-target="2">0</h4>
+                                <p>Internships Done</p>
+                            </div>
+                        </div>
+                        <div class="stat-card-mini">
+                            <div class="stat-icon-mini"><i class="fas fa-mug-hot"></i></div>
+                            <div>
+                                <h4 class="stat-text">Always</h4>
+                                <p>Learning &amp; Improving</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Focus Side -->
+                <div class="focus-side reveal slide-right">
+                    <h3 class="side-heading"><i class="fas fa-bullseye"></i> Current Focus</h3>
+                    <div class="focus-list">
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fab fa-react"></i></div>
+                            <div class="focus-details">
+                                <h4>Full-Stack Development</h4>
+                                <p>MERN Stack development (React &amp; Node.js)</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fab fa-java"></i></div>
+                            <div class="focus-details">
+                                <h4>Java DSA &amp; LeetCode</h4>
+                                <p>Algorithmic practice to improve logic</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fas fa-robot"></i></div>
+                            <div class="focus-details">
+                                <h4>AI Resume Boost</h4>
+                                <p>Review builder using large language models</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon"><i class="fas fa-bus"></i></div>
+                            <div class="focus-details">
+                                <h4>Live Bus Tracking</h4>
+                                <p>Transit location tracking web app</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>CONTACT ME</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal slide-left">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>premkanthks@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>8088113122</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/premkanth-ks/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/premkanths" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Premkant_h?t=QY0K37wRJg_PbU3mNhqB1w&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_prem_kanth_s_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form reveal slide-right">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <p id="formStatus" class="form-status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Premkanth KS. Built with HTML, CSS &amp; JavaScript. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
